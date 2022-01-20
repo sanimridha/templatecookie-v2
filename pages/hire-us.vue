@@ -2,16 +2,18 @@
   <div>
     <div class="bg-gray-f0 pb-20 lg:pb-124 pt-230">
       <div class="container">
-        <div class="text-center max-w-4xl m-auto mb-20 lg:mb-28">
+        <div
+          class="text-center max-w-4xl m-auto mb-20 lg:mb-28"
+          data-aos="zoom-in"
+          data-aos-duration="1200"
+        >
           <h1
             class="text-dark-06 text-4xl md:text-5xl lg:text-6xl xl:text-heading-80 font-semibold mb-6 lg:mb-9 tracking-ls02"
-            data-aos="fade-up"
-            data-aos-duration="1200"
           >
             The easiest way to create your website.
           </h1>
           <p
-            class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9 max-w-xl m-auto"
+            class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9 max-w-xl m-auto font-light"
           >
             Golio gives you everything you need to create your website in
             minutes. Bootstrap code with a well-organized Figma file to design &
@@ -34,7 +36,7 @@
             class="col-span-full ex-small:col-span-2 ex-small:lg:col-span-1"
             data-aos="fade-up"
             :data-aos-delay="item.aosDelay"
-            data-aos-duration="1200"
+            data-aos-duration="800"
           >
             <div
               class="flex flex-col ex-small:flex-row items-center text-center ex-small:text-left"
@@ -66,31 +68,17 @@
 
     <div class="py-20 lg:py-124">
       <div class="container">
-        <div class="lg:grid grid-cols-12 gap-7">
-          <div class="col-span-6 lg:order-2 lg:mb-0 mb-8">
-            <div class="grid grid-cols-12 gap-6">
-              <div
-                v-for="(item, itemIndex) in items"
-                :key="itemIndex"
-                class="sm:col-span-6 col-span-12 build-solution"
-                :data-aos="item.aos"
-                data-aos-duration="1200"
-              >
-                <SolutionCard :title="item.title" :text="item.text" />
-              </div>
-            </div>
-          </div>
-          <div class="col-span-6 flex items-center">
+        <div class="lg:grid grid-cols-2 gap-7">
+          <div class="flex items-center lg:mb-0 mb-9 text-center lg:text-left">
             <div class="lg:max-w-536">
               <h2
-                class="text-dark-06 text-body-32px sm:text-4xl md:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls01"
-                data-aos="fade-up"
-                data-aos-delay="350"
-                data-aos-easing="ease-in"
+                class="text-dark-06 text-body-32px sm:text-4xl md:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-01"
               >
                 We design & build your solution.
               </h2>
-              <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9">
+              <p
+                class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9 font-light"
+              >
                 Nunc convallis semper justo quis tempor. Praesent molestie,
                 lorem sed imperdiet tempor, libero urna semper urna, facilisis
                 vulputate velit arcu vitae mi. Donec ac nisi ex.
@@ -106,6 +94,24 @@
               /></nuxt-link>
             </div>
           </div>
+          <div>
+            <div class="grid grid-cols-12 gap-6">
+              <div
+                v-for="(item, itemIndex) in featureList"
+                :key="itemIndex"
+                class="sm:col-span-6 col-span-12 build-solution"
+                :data-aos="item.aos"
+                data-aos-duration="800"
+                data-aos-once="true"
+              >
+                <SolutionCard
+                  :title="item.title"
+                  :text="item.text"
+                  :icon="item.icon"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -116,13 +122,10 @@
         <div class="lg:max-w-680 m-auto text-center mb-16">
           <h2
             class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls02"
-            data-aos="fade-up"
-            data-aos-delay="350"
-            data-aos-easing="ease-in"
           >
             Beautiful UI kit designed to grow your business.
           </h2>
-          <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9">
+          <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9 font-light">
             Phasellus interdum sagittis magna. Donec varius ultricies diam sed
             lacinia. Mauris porttitor. quis risus eget mattis Ut auctor.
           </p>
@@ -132,14 +135,16 @@
             v-for="(item, itemIndex) in BusinessItems"
             :key="itemIndex"
             class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6"
-            data-aos="fade-up"
-            data-aos-duration="1600"
           >
             <BusinessCard
               className="text-center"
               classNameIcon="m-auto"
               :title="item.title"
               :text="item.text"
+              :data-aos="item.dataAos"
+              :data-aos-delay="item.aosDelay"
+              data-aos-duration="800"
+              data-aos-once="true"
             />
           </div>
         </div>
@@ -152,13 +157,10 @@
         <div class="lg:max-w-3xl m-auto text-center mb-16">
           <h2
             class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls02"
-            data-aos="fade-up"
-            data-aos-delay="350"
-            data-aos-easing="ease-in"
           >
             Your development plan, our development team.
           </h2>
-          <p class="text-dark-06 text-lg sm:text-lg mb-6 lg:mb-9">
+          <p class="text-dark-06 text-lg sm:text-lg mb-6 lg:mb-9 font-light">
             You want to build a web app from scratch or just add some new
             features on a theme. We’ll give you an entire team of professional
             developers. Or just one. Pick what works best for you, and we’ll
@@ -170,6 +172,7 @@
             class="col-span-12 lg:col-span-6 md:col-span-6 sm:col-span-6"
             data-aos="fade-up-right"
             data-aos-duration="1200"
+            data-aos-once="true"
           >
             <div class="rounded-xl p-6 md:p-8 shadow-bs8 border border-gray-e6">
               <div class="mb-8">
@@ -195,7 +198,7 @@
                 </p>
                 <nuxt-link to="/"
                   ><span
-                    class="mt-7 w-full font-medium rounded-7 text-body-17 text-white p-3 bg-blue-0b block text-center duration-300 hover:bg-dark-06"
+                    class="mt-7 w-full font-medium rounded-7 text-body-17/56px text-white inline-block bg-blue-0b text-center duration-300 hover:bg-dark-06"
                     >I Want This</span
                   ></nuxt-link
                 >
@@ -206,6 +209,7 @@
             class="col-span-12 lg:col-span-6 md:col-span-6 sm:col-span-6"
             data-aos="fade-up-left"
             data-aos-duration="1200"
+            data-aos-once="true"
           >
             <div class="rounded-xl p-6 md:p-8 shadow-bs8 border border-gray-e6">
               <div class="mb-8">
@@ -234,7 +238,7 @@
                 </ul>
                 <nuxt-link to="/"
                   ><span
-                    class="mt-7 w-full font-medium rounded-7 text-body-17 text-white p-3 bg-blue-0b block text-center duration-300 hover:bg-dark-06"
+                    class="mt-7 w-full font-medium rounded-7 text-body-17/56px text-white inline-block bg-blue-0b text-center duration-300 hover:bg-dark-06"
                     >I Want This</span
                   ></nuxt-link
                 >
@@ -254,9 +258,6 @@
         <div class="lg:max-w-680 m-auto text-center mb-16">
           <h2
             class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls02"
-            data-aos="fade-up"
-            data-aos-delay="350"
-            data-aos-easing="ease-in"
           >
             Have a project idea! Write down a quote.
           </h2>
@@ -270,7 +271,7 @@
           class="shadow-bs08 rounded-3xl p-8 sm:p-12 bg-white max-w-872 m-auto"
         >
           <h2
-            class="text-dark-06 font-semibold tracking-ls01 text-2xl md:text-4xl mb-8 md:mb-12 text-center"
+            class="text-dark-06 font-semibold tracking-01 text-2xl md:text-4xl mb-8 md:mb-12 text-center"
             data-aos="flip-up"
             data-aos-duration="1200"
           >
@@ -427,7 +428,7 @@
           <div>
             <nuxt-link
               to="/"
-              class="w-full text-center inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06"
+              class="w-full text-center inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06 capitalize"
               >Request a quote
               <img
                 class="inline-block ml-2"
@@ -495,23 +496,27 @@ export default {
         backgroundImage: "url(https://i.imgur.com/2HNdUlR.png)",
       },
 
-      items: [
+      featureList: [
         {
+          icon: "https://i.imgur.com/UhqXDIG.png",
           aos: "fade-up-right",
           title: "1. Understanding (UX)",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          icon: "https://i.imgur.com/bniudjt.png",
           aos: "fade-up-left",
           title: "2. Stage of Design (UI)",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          icon: "https://i.imgur.com/iGXELjX.png",
           aos: "fade-up-right",
           title: "3. Development",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          icon: "https://i.imgur.com/eWkTzLc.png",
           aos: "fade-up-left",
           title: "4. Project Delivery",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
@@ -521,29 +526,37 @@ export default {
       BusinessItems: [
         {
           aosDelay: 0,
+          dataAos: "fade-up",
           title: "Project Introduction",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 300,
+          aosDelay: 150,
+          dataAos: "fade-up",
           title: "User Experience Design",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 600,
+          aosDelay: 250,
+          dataAos: "fade-up",
           title: "User Interface Design",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 900,
+          aosDelay: 0,
+          dataAos: "fade-up",
           title: "Front-end Development",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 150,
+          dataAos: "fade-up",
           title: "Back-end Development",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 250,
+          dataAos: "fade-up",
           title: "Delivery & Client Feedback",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },

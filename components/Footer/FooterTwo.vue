@@ -6,7 +6,7 @@
         <!-- Brand info -->
         <div class="mb-12 col-span-2 xl:col-span-1">
           <!-- logo -->
-          <div class="mb-6" data-aos="flip-up" data-aos-duration="1600">
+          <div class="mb-6" data-aos="flip-up" data-aos-duration="1200">
             <img src="~/assets/images/logo-white.svg" alt="brand-logo" />
           </div>
           <p class="text-body-16 text-gray-b4 md:max-w-sm font-light">
@@ -106,7 +106,7 @@
           </div>
           <div class="col-span-full lg:col-span-2 mt-8 lg:mt-0">
             <!-- subscribe to newsletter  -->
-            <div class="">
+            <div>
               <h2 class="text-body-20 text-white uppercase mb-3">
                 Subscribe to our newsletter
               </h2>

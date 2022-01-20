@@ -9,7 +9,7 @@
             <div class="border border-gray-e6 rounded-2xl p-6">
               <div class="mb-6 overflow-hidden">
                 <img
-                  class="w-full h-full duration-500 hover:scale-110	"
+                  class="w-full h-full duration-500 hover:scale-110"
                   src="~@/assets/images/all-img/product-details-thumb.png"
                   alt=""
                 />
@@ -87,7 +87,7 @@
                 <h4
                   class="text-dark-06 text-xl mb-5 uppercase"
                   data-aos="fade-up"
-                  data-aos-duration="1600"
+                  data-aos-duration="1200"
                 >
                   DESCRIPTION
                 </h4>
@@ -140,7 +140,7 @@
                 <h4
                   class="text-dark-06 text-xl mb-5 uppercase"
                   data-aos="fade-up"
-                  data-aos-duration="1600"
+                  data-aos-duration="1200"
                 >
                   HIGHLIGHTS
                 </h4>
@@ -188,7 +188,7 @@
                 <h4
                   class="text-dark-06 text-xl mb-5 uppercase"
                   data-aos="fade-up"
-                  data-aos-duration="1600"
+                  data-aos-duration="1200"
                 >
                   FOLDER STRUCTURE
                 </h4>
@@ -221,7 +221,7 @@
                 <h4
                   class="text-dark-06 text-xl mb-5 uppercase"
                   data-aos="fade-up"
-                  data-aos-duration="1600"
+                  data-aos-duration="1200"
                 >
                   CHANGELOG
                 </h4>
@@ -328,19 +328,70 @@
                 </div>
                 <div class="pt-6">
                   <ul>
-                    <li
-                      v-for="(item, indexItem) in myDocumentation"
-                      :key="indexItem"
-                      class="text-gray-6a text-sm mb-4"
-                    >
+                    <li class="text-gray-6a text-sm mb-4">
                       <img
                         class="inline mr-2.5"
                         src="~@/assets/images/svg/icon/arrows-clockwise.svg"
                         alt=""
-                      />
-                      {{ item.title
-                      }}<span class="float-right text-dark-06">
-                        {{ item.text }}
+                      />Last Update
+                      <span class="float-right text-dark-06">
+                        1 monts ago
+                      </span>
+                    </li>
+                    <li class="text-gray-6a text-sm mb-4">
+                      <img
+                        class="inline mr-2.5"
+                        src="~@/assets/images/svg/icon/megaphone.svg"
+                        alt=""
+                      />Released:
+                      <span class="float-right text-dark-06">
+                        2 years ago
+                      </span>
+                    </li>
+                    <li class="text-gray-6a text-sm mb-4">
+                      <img
+                        class="inline mr-2.5"
+                        src="~@/assets/images/svg/icon/diff.svg"
+                        alt=""
+                      />Version:
+                      <span class="float-right text-dark-06"> v2.7.4 </span>
+                    </li>
+                    <li class="text-gray-6a text-sm mb-4">
+                      <img
+                        class="inline mr-2.5"
+                        src="~@/assets/images/svg/icon/category.svg"
+                        alt=""
+                      />Category:
+                      <span class="float-right text-dark-06">
+                        UI Template
+                      </span>
+                    </li>
+                    <li class="text-gray-6a text-sm mb-4">
+                      <img
+                        class="inline mr-2.5"
+                        src="~@/assets/images/svg/icon/file.svg"
+                        alt=""
+                      />File Inlcude:
+                      <span class="float-right text-dark-06"> Fig, Figma </span>
+                    </li>
+                    <li class="text-gray-6a text-sm mb-4">
+                      <img
+                        class="inline mr-2.5"
+                        src="~@/assets/images/svg/icon/notebook.svg"
+                        alt=""
+                      />Documentation:
+                      <span class="float-right text-dark-06">
+                        Well Documented
+                      </span>
+                    </li>
+                    <li class="text-gray-6a text-sm mb-4">
+                      <img
+                        class="inline mr-2.5"
+                        src="~@/assets/images/svg/icon/hand.svg"
+                        alt=""
+                      />Customer Support:
+                      <span class="float-right text-dark-06">
+                        3 Month Support
                       </span>
                     </li>
                   </ul>
@@ -359,9 +410,9 @@
             <div class="col-span-6 flex items-center">
               <div class="xl:max-w-536 xl:py-16 text-center xl:text-left">
                 <h2
-                  class="text-white text-3xl lg:text-heading-40 font-semibold mb-5 tracking-ls01"
+                  class="text-white text-3xl lg:text-heading-40 font-semibold mb-5 tracking-01"
                   data-aos="fade-up"
-                  data-aos-duration="1600"
+                  data-aos-duration="1200"
                 >
                   24/7 Customer Support
                 </h2>
@@ -372,19 +423,19 @@
                   lorem sed imperdiet tempor, libero urna semper urna, facilisis
                   vulputate velit arcu vitae mi. Donec ac nisi ex.
                 </p>
-                <div>
+                <div class="flex flex-col sm:flex-row items-center">
                   <nuxt-link
                     to="/"
-                    class="block text-center sm:inline-block bg-white-12 rounded-7 py-4 px-9 text-body-17 text-white duration-300 sm:mb-0 mb-3 sm:mr-3 hover:bg-dark-06"
+                    class="order-2 sm:order-1 w-full sm:w-auto inline-block text-center bg-white-12 rounded-7 py-4 px-9 text-body-17 text-white duration-300 mr-0 sm:mr-3 hover:bg-dark-06 whitespace-nowrap overflow-hidden overflow-ellipsis"
                     data-aos="fade-up-right"
-                    data-aos-duration="1600"
+                    data-aos-duration="1200"
                     >Buy Now</nuxt-link
                   >
                   <nuxt-link
                     to="/"
-                    class="block text-center sm:inline-block bg-white rounded-7 py-4 px-9 text-body-17 text-blue-0b duration-300 hover:bg-dark-06 hover:text-white"
+                    class="order-1 sm:order-2 w-full sm:w-auto inline-block text-center bg-white rounded-7 py-4 px-9 text-body-17 text-blue-0b duration-300 hover:bg-dark-06 hover:text-white mb-4 sm:mb-0 whitespace-nowrap overflow-hidden overflow-ellipsis"
                     data-aos="fade-up-left"
-                    data-aos-duration="1600"
+                    data-aos-duration="1200"
                     >Customer Support</nuxt-link
                   >
                 </div>
@@ -812,26 +863,33 @@ export default {
 
       myDocumentation: [
         {
+          icon: "arrows-clockwise.svg",
           title: "Last Update:",
           text: "1 months ago",
         },
         {
+          icon: "arrows-clockwise.svg",
           title: "Released:",
           text: "2 years ago ",
         },
         {
+          icon: "arrows-clockwise.svg",
           title: "Version:",
           text: "v2.7.4",
         },
+
         {
+          icon: "arrows-clockwise.svg",
           title: "Category:",
           text: "UI Template",
         },
         {
+          icon: "arrows-clockwise.svg",
           title: "File Inlcude:",
           text: "Fig, Figma",
         },
         {
+          icon: "arrows-clockwise.svg",
           title: "Documentation:",
           text: "Well Documented",
         },

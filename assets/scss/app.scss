@@ -208,13 +208,16 @@ input[type="radio"]:checked + label span {
   &-box {
     cursor: pointer;
     padding: 24px;
-    height: 120px;
+    height: 112px;
     white-space: nowrap;
     transition: all 0.3s ease-in-out;
 
     &.is-active,
     &:hover {
       box-shadow: 0px -3px 0px 0px #0b63e5 inset;
+      h6 {
+        color: #061c3d;
+      }
     }
   }
 }
@@ -467,13 +470,15 @@ body {
       font-size: 16px;
       line-height: 24px;
       color: #42526b;
+      padding: 16px 0;
+      display: block;
       text-transform: capitalize;
     }
   }
 
   &__dropdown {
     position: absolute;
-    top: calc(100% + 20px);
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     padding: 12px 0px;
@@ -599,4 +604,10 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+//
+
+.clip-thumb {
+  clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
 }

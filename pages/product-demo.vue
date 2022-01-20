@@ -1,15 +1,15 @@
 <template>
   <div>
     <div
-      class="pb-36 pt-56 lg:pb-222 lg:pt-310 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo"
+      class="pb-36 pt-56 lg:pb-222 lg:pt-300 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo"
       :style="DemoHero"
     >
       <div class="container">
-        <div class="max-w-2xl relative">
+        <div class="max-w-2xl sm:text-left text-center relative">
           <h1
-            class="tracking-ls01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8"
+            class="tracking-01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8"
             data-aos="flip-up"
-            data-aos-duration="1200"
+            data-aos-duration="800"
           >
             Relik - Admin Dashboard Figma Template
           </h1>
@@ -23,7 +23,7 @@
               to="/"
               class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3"
               data-aos="fade-up-right"
-              data-aos-duration="1200"
+              data-aos-duration="800"
               >Buy Now
               <img
                 class="inline-block ml-2"
@@ -34,14 +34,16 @@
               to="/"
               class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300"
               data-aos="fade-up-left"
-              data-aos-duration="1200"
+              data-aos-duration="800"
               >Live Preview</nuxt-link
             >
           </div>
           <div
-            class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center absolute -bottom-44 lg:-bottom-64 left-0"
+            class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center justify-center sm:justify-start absolute -bottom-44 lg:-bottom-64 sm:left-0 sm:transform-none transform -translate-x-1/2 left-1/2 sm:w-auto w-full"
           >
-            <p class="text-dark-06 text-xs mr-4">Compatible with:</p>
+            <p class="text-dark-06 text-body-14/24 mr-4 text-left">
+              Compatible with:
+            </p>
             <ul class="flex space-x-3">
               <li>
                 <nuxt-link to="#"
@@ -75,10 +77,7 @@
         <div class="md:grid grid-cols-12 gap-6 mb-12 items-center">
           <div class="col-span-7 mb-4 md:mb-0">
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-ls01"
-              data-aos="fade-up"
-              data-aos-delay="350"
-              data-aos-easing="ease-in"
+              class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-01"
             >
               Explore Relik<br />
               Notable Feature
@@ -97,7 +96,8 @@
             :key="itemIndex"
             class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6"
             data-aos="fade-up"
-            data-aos-duration="1200"
+            data-aos-duration="800"
+            data-aos-once="true"
             :data-aos-delay="item.aosDelay"
           >
             <BusinessCard
@@ -134,7 +134,8 @@
               class="mb-6 lg:mb-0 h-340 md:h-470"
               data-aos="fade-up-left"
               data-aos-delay="300"
-              data-aos-duration="1200"
+              data-aos-duration="800"
+              data-aos-once="true"
             >
               <img
                 class="w-full h-full object-cover rounded-20"
@@ -149,14 +150,13 @@
                 Explore our Gilio team services.
               </h3>
               <h2
-                class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-                data-aos="fade-up"
-                data-aos-delay="350"
-                data-aos-easing="ease-in"
+                class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
               >
                 Feature Name 01
               </h2>
-              <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+              <p
+                class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light"
+              >
                 Nunc convallis semper justo quis tempor. Praesent molestie,
                 lorem sed imperdiet tempor, libero urna semper urna, facilisis
                 vulputate velit arcu vitae mi. Donec ac nisi ex.
@@ -183,14 +183,13 @@
               Explore our Gilio team services.
             </h3>
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-              data-aos="fade-up"
-              data-aos-delay="350"
-              data-aos-easing="ease-in"
+              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
             >
               Feature Name 01
             </h2>
-            <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+            <p
+              class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light"
+            >
               Nunc convallis semper justo quis tempor. Praesent molestie, lorem
               sed imperdiet tempor, libero urna semper urna, facilisis vulputate
               velit arcu vitae mi. Donec ac nisi ex.
@@ -199,8 +198,9 @@
           <div
             class="mb-6 lg:mb-0 h-350 md:h-650"
             data-aos="fade-up"
-            data-aos-duration="1200"
+            data-aos-duration="800"
             data-aos-delay="350"
+            data-aos-once="true"
           >
             <img
               class="w-full object-cover rounded-20"
@@ -219,8 +219,9 @@
               <div
                 class="lg:mr-20 mb-6 lg:mb-0 h-340 md:h-470"
                 data-aos="fade-up-right"
-                data-aos-duration="1200"
+                data-aos-duration="800"
                 data-aos-delay="300"
+                data-aos-once="true"
               >
                 <img
                   class="w-full h-full object-cover rounded-20"
@@ -235,14 +236,13 @@
                   Explore our Gilio team services.
                 </h3>
                 <h2
-                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-                  data-aos="fade-up"
-                  data-aos-delay="350"
-                  data-aos-easing="ease-in"
+                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
                 >
                   Feature Name 01
                 </h2>
-                <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+                <p
+                  class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light"
+                >
                   Nunc convallis semper justo quis tempor. Praesent molestie,
                   lorem sed imperdiet tempor, libero urna semper urna, facilisis
                   vulputate velit arcu vitae mi. Donec ac nisi ex.
@@ -270,14 +270,13 @@
               Explore our Gilio team services.
             </h3>
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-              data-aos="fade-up"
-              data-aos-delay="350"
-              data-aos-easing="ease-in"
+              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
             >
               Feature Name 01
             </h2>
-            <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+            <p
+              class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light"
+            >
               Nunc convallis semper justo quis tempor. Praesent molestie, lorem
               sed imperdiet tempor, libero urna semper urna, facilisis vulputate
               velit arcu vitae mi. Donec ac nisi ex.
@@ -290,9 +289,10 @@
                   v-if="activetab === '1'"
                   class="tabcontent"
                   data-aos="fade-up-left"
-                  data-aos-duration="1600"
+                  data-aos-duration="800"
                   data-aos-delay="300"
                   data-aos-offset="200"
+                  data-aos-once="true"
                 >
                   <div class="h-340 md:h-600">
                     <img
@@ -306,9 +306,10 @@
                   v-if="activetab === '2'"
                   class="tabcontent"
                   data-aos="fade-up-left"
-                  data-aos-duration="1600"
+                  data-aos-duration="800"
                   data-aos-delay="300"
                   data-aos-offset="200"
+                  data-aos-once="true"
                 >
                   <div class="h-340 md:h-600">
                     <img
@@ -322,9 +323,10 @@
                   v-if="activetab === '3'"
                   class="tabcontent"
                   data-aos="fade-up-left"
-                  data-aos-duration="1600"
+                  data-aos-duration="800"
                   data-aos-delay="300"
                   data-aos-offset="200"
+                  data-aos-once="true"
                 >
                   <div class="h-340 md:h-600">
                     <img
@@ -400,9 +402,10 @@
               <div
                 class="lg:mr-20 mb-6 lg:mb-0 h-340 md:h-470"
                 data-aos="fade-up-right"
-                data-aos-duration="1600"
+                data-aos-duration="800"
                 data-aos-delay="300"
                 data-aos-offset="200"
+                data-aos-once="true"
               >
                 <img
                   class="w-full h-full object-cover rounded-20"
@@ -417,14 +420,13 @@
                   Explore our Gilio team services.
                 </h3>
                 <h2
-                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-                  data-aos="fade-up"
-                  data-aos-delay="350"
-                  data-aos-easing="ease-in"
+                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
                 >
                   Feature Name 01
                 </h2>
-                <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+                <p
+                  class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light"
+                >
                   Nunc convallis semper justo quis tempor. Praesent molestie,
                   lorem sed imperdiet tempor, libero urna semper urna, facilisis
                   vulputate velit arcu vitae mi. Donec ac nisi ex.
@@ -449,10 +451,7 @@
         <div class="container">
           <div class="text-center mb-8 lg:mb-12">
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-              data-aos="fade-up"
-              data-aos-delay="350"
-              data-aos-easing="ease-in"
+              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
             >
               45+ Beautiful hand-crafted pages
             </h2>
@@ -463,8 +462,9 @@
               :key="itemIndex"
               class="col-span-12 xl:col-span-3 lg:col-span-6 md:col-span-6"
               data-aos="fade-up"
-              data-aos-duration="1200"
+              data-aos-duration="800"
               :data-aos-delay="item.aosDelay"
+              data-aos-once="true"
             >
               <LinkThumb :img="item.img" :title="item.title" :url="item.url" />
             </div>
@@ -477,10 +477,7 @@
         <div class="container">
           <div class="text-center mb-24">
             <h2
-              class="text-white text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-              data-aos="fade-up"
-              data-aos-delay="350"
-              data-aos-easing="ease-in"
+              class="text-white text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
             >
               Let’s Get Started
             </h2>
@@ -498,7 +495,7 @@
             /></nuxt-link>
           </div>
         </div>
-        <div class="">
+        <div>
           <swiper class="swiper" :options="swiperOptionOne">
             <swiper-slide class="slider-full">
               <img
@@ -569,14 +566,12 @@
         <div class="container">
           <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-              data-aos="fade-up"
-              data-aos-duration="1200"
+              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
             >
               Folder Structure
             </h2>
             <p
-              class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9 font-light"
+              class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light font-light"
             >
               Nunc convallis semper justo quis tempor. Praesent molestie, lorem
               sed imperdiet tempor, libero urna semper urna
@@ -645,30 +640,11 @@
 
       <div class="py-20 lg:py-124 bg-gray-f5">
         <div class="container">
-          <div class="lg:grid grid-cols-12 gap-6">
-            <div class="col-span-6 order-2 mb-6 lg:mb-0">
-              <pre
-                class="border border-gray-e6 p-8 rounded-2xl bg-white text-sm text-dark-06 pb-0 h-200 overflow-y-scroll custom-scroll"
-              >
-    ├── templatecookie
-        ├── assets
-          ├── css
-          ├── fonts 
-          ├── images
-          ├── js
-        ├── index.vue
-        ├── hire-us.vue
-        ├── product-demo.vue
-        ├── product-details.vue
-        ├── product-list.vue
-        ├── billing.vue
-                </pre
-              >
-            </div>
-            <div class="col-span-6 flex items-center">
-              <div class="lg:pr-20">
+          <div class="lg:grid grid-cols-2 gap-6">
+            <div class="flex items-center mb-6 lg:mb-0">
+              <div class="lg:pr-20 text-center lg:text-left">
                 <h2
-                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
                 >
                   Folder Structure
                 </h2>
@@ -678,6 +654,29 @@
                   vulputate velit arcu vitae mi. Donec ac nisi ex.
                 </p>
               </div>
+            </div>
+            <div class="">
+              <pre
+                class="border border-gray-e6 p-8 rounded-2xl bg-white text-sm text-dark-06 pb-0 h-364 overflow-y-scroll custom-scroll"
+              >
+    ├── templatecookie
+        ├── assets
+          ├── css
+          ├── fonts 
+          ├── images
+          ├── js
+        ├── components
+        ├── pages
+          ├── index.vue
+          ├── hire-us.vue
+          ├── product-demo.vue
+          ├── product-details.vue
+          ├── product-list.vue
+          ├── billing.vue
+          ├── billing.vue
+
+                </pre
+              >
             </div>
           </div>
         </div>
@@ -691,15 +690,16 @@
               v-for="(item, itemIndex) in PurchaseItems"
               :key="itemIndex"
               class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              :data-aos-delay="item.aosDelay"
             >
               <PurchaseCard
                 :title="item.title"
                 :text="item.text"
-                :btnUrl="item.url"
+                btnUrl="#"
+                :icon="item.icon"
                 :btnText="item.btnText"
+                :data-aos-delay="item.aosDelay"
+                :data-aos="item.dataAos"
+                data-aos-duration="800"
               />
             </div>
           </div>
@@ -949,21 +949,24 @@ export default {
       PurchaseItems: [
         {
           aosDelay: 0,
-          url: "https://www.google.com/",
+          dataAos: "fade-up",
+          icon: "https://i.imgur.com/xSZYYEg.png",
           title: "Let’s Purchase This Product",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
           btnText: "Purchase Now",
         },
         {
-          aosDelay: 160,
-          url: "https://www.google.com/",
+          aosDelay: 150,
+          dataAos: "fade-up",
+          icon: "https://i.imgur.com/OALz67a.png",
           title: "Well-Organize Documentation",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
           btnText: "Documentation",
         },
         {
-          aosDelay: 260,
-          url: "https://www.google.com/",
+          aosDelay: 250,
+          dataAos: "fade-up",
+          icon: "https://i.imgur.com/sbCT8wF.png",
           title: "24/7 Customer Support",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
           btnText: "Get Support",
@@ -977,7 +980,7 @@ export default {
 <style lang="scss" scoped>
 // animation
 .slider-full {
-  animation: scroll 20s linear infinite;
+  animation: scroll 26s linear infinite;
 }
 @keyframes scroll {
   0% {
@@ -990,6 +993,11 @@ export default {
 // swiper single silder
 
 .single-slider {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: calc(50% - 15px);
+    transform: translateY(-50%);
+  }
   .swiper-button-prev:after,
   .swiper-button-next:after {
     content: none;

@@ -69,6 +69,10 @@ module.exports = {
         "body-10": ["10px", "10px"],
         "body-18": ["18px", "26px"],
         "body-32px": ["32px", "46px"],
+        "body-14/20": ["14px", "20px"],
+        "body-12/12": ["12px", "12px"],
+        "body-14/24": ["14px", "24px"],
+        "body-17/56px": ["17px", "56px"],
       },
 
       maxWidth: {
@@ -105,7 +109,9 @@ module.exports = {
         470: "470px",
         470: "470px",
         340: "340px",
+        364: "364px",
         650: "650px",
+        680: "680px",
       },
 
       margin: {
@@ -121,12 +127,12 @@ module.exports = {
         216: "216px",
         230: "230px",
         222: "222px",
-        310: "310px",
+        300: "300px",
       },
       letterSpacing: {
-        ls01: " -0.015em",
-        ls02: "-0.02em",
-        ls03: " -0.012em",
+        01: " 0.015em",
+        ls02: "0.02em",
+        ls03: " 0.012em",
         ls04: " 0.01em",
       },
       borderRadius: {
