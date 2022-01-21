@@ -1,14 +1,12 @@
 import gql from 'graphql-tag';
 
-// export const global = gql`
+
 export default gql`
-query Homepage {
+query {
   homepage {
     data {
-      id
       attributes {
         sections {
-          __typename
           ...on ComponentSectionsHero {
             id
             title
@@ -50,18 +48,17 @@ query Homepage {
             id
             title
             description
-            #button {
-          	# id
-          	# Label 
-          	# theme
-          	# width 
-          	# link {
-          	# id
-          	# href
-          	# label
-          	# target
-          	# }
-          	# }
+            browse_more {
+              id
+              Label
+              theme
+              width
+              link {
+                href
+                label
+                target
+              }
+            }
             products {
               data {
                 attributes {
@@ -150,4 +147,5 @@ query Homepage {
       }
     }
   }
-}`
+}
+`
