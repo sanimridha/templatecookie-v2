@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <Header v-if="global && global.data.attributes" :data="global.data.attributes.header"/>
     <nuxt />
     <!-- newsletter  -->
     <Newsletter />

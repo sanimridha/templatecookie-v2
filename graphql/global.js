@@ -33,6 +33,18 @@ query {
               id
             }
           }
+          button {
+            id
+            Label
+            theme
+            width
+            link {
+              href
+              label
+              target
+              id
+            }
+          }
         }
         footer {
           id
