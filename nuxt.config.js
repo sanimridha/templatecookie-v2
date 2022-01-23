@@ -44,13 +44,18 @@ export default {
     '@nuxtjs/apollo',
   ],
   apollo: {
+    includeNodeModules: true,
     clientConfigs: {
-      default: {
-        httpEndpoint: 'http://localhost:1337/graphql',
-      }
+      default: '~/graphql/client-configs.js'
     }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    extend (config, ctx) {
+      config.node = {
+        fs: 'empty'
+      }
+    }
+  },
 };

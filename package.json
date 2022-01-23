@@ -13,6 +13,7 @@
     "aos": "^2.3.4",
     "core-js": "^3.19.3",
     "countup.js": "^2.0.8",
+    "fs": "^0.0.1-security",
     "graphql-tag": "^2.12.6",
     "nuxt": "^2.15.8",
     "swiper": "5.x",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.1",
+    "node-fetch": "^3.2.0",
     "postcss": "^8.4.4",
     "sass": "^1.47.0",
     "sass-loader": "10.1.1"
