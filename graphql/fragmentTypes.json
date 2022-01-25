@@ -1,0 +1,56 @@
+{
+  "possibleTypes": {
+    "GenericMorph": [
+      "Category",
+      "ComponentGlobalFooter",
+      "ComponentGlobalHeader",
+      "ComponentGlobalNewsletter",
+      "ComponentSectionsFeaturedProduct",
+      "ComponentSectionsHero",
+      "ComponentSectionsLatestProducts",
+      "ComponentSectionsTopFeature",
+      "ComponentSectionsWhyUs",
+      "ComponentSharedButton",
+      "ComponentSharedCounter",
+      "ComponentSharedFeature",
+      "ComponentSharedHirePlan",
+      "ComponentSharedLink",
+      "ComponentSharedNavigationSection",
+      "Global",
+      "HireUs",
+      "Homepage",
+      "I18NLocale",
+      "Page",
+      "Product",
+      "SocialMedia",
+      "SubCategory",
+      "Technology",
+      "UploadFile",
+      "UsersPermissionsPermission",
+      "UsersPermissionsRole",
+      "UsersPermissionsUser"
+    ],
+    "HireUsSectionsDynamicZone": [
+      "ComponentSectionsHero",
+      "ComponentSectionsTopFeature",
+      "ComponentSectionsWhyUs",
+      "Error"
+    ],
+    "HomepageSectionsDynamicZone": [
+      "ComponentSectionsFeaturedProduct",
+      "ComponentSectionsHero",
+      "ComponentSectionsLatestProducts",
+      "ComponentSectionsTopFeature",
+      "ComponentSectionsWhyUs",
+      "Error"
+    ],
+    "PageSectionsDynamicZone": [
+      "ComponentSectionsFeaturedProduct",
+      "ComponentSectionsHero",
+      "ComponentSectionsLatestProducts",
+      "ComponentSectionsTopFeature",
+      "ComponentSectionsWhyUs",
+      "Error"
+    ]
+  }
+}

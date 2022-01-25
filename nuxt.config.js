@@ -46,16 +46,10 @@ export default {
   apollo: {
     includeNodeModules: true,
     clientConfigs: {
-      default: '~/graphql/client-configs.js'
+      default: '~/graphql/config.js'
     }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    extend (config, ctx) {
-      config.node = {
-        fs: 'empty'
-      }
-    }
-  },
+  build: {},
 };

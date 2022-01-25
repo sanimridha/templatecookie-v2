@@ -407,23 +407,7 @@
     </section>
   </div>
 </template>
-const SINGLE_CHARACTER_QUERY = gql`
-  query SINGLE_CHARACTER_QUERY ($id: ID!) {
-    character(id: $id) {
-      name
-      species
-      gender
-      origin {
-        name
-      }
-      episode {
-        id
-        name
-        air_date
-      }
-    }
-  }
-`
+
 <script>
 import bannerImg from "~/assets/images/all-img/img-five.png";
 import ProductCard from "../components/ProductCard.vue";
@@ -432,28 +416,23 @@ import HOMEPAGE_QUERY from '../graphql/homepage'
 
 export default {
   components: { ProductCard, ICountUp },
-  // async asyncData({ app }) {
-  //   const client = app.apolloProvider.defaultClient;
-  //   // const { id } = params;
+  async asyncData({ app }) {
+    const client = app.apolloProvider.defaultClient;
 
-  //   const res = await client.query({
-  //     query: HOMEPAGE_QUERY,
-  //     // variables: {
-  //     //   id,
-  //     // },
-  //   }).then(({ data }) => data)
-
-  //   const homepage = res;
-    
-  //   return {homepage}
-  // },
-
-  apollo: {
-    homepage: {
+    const res = await client.query({
       query: HOMEPAGE_QUERY,
-      prefetch: true,
-    },
+    })
+    const homepage = res;
+    
+    return {homepage}
   },
+
+  // apollo: {
+  //   homepage: {
+  //     query: HOMEPAGE_QUERY,
+  //     prefetch: true,
+  //   },
+  // },
   data() {
     return {
       options: {

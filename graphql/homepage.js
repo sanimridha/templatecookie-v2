@@ -2,12 +2,13 @@ import gql from 'graphql-tag';
 
 
 export default gql`
-query {
+query Homepage {
   homepage {
     data {
       attributes {
         sections {
-          ...on ComponentSectionsHero {
+          ... on ComponentSectionsHero {
+            __typename
             id
             title
             description
@@ -39,12 +40,14 @@ query {
               }
             }
           }
-          ...on ComponentSectionsFeaturedProduct {
+          ... on ComponentSectionsFeaturedProduct {
+            __typename
             id
             title
             description
           }
-          ...on ComponentSectionsLatestProducts {
+          ... on ComponentSectionsLatestProducts {
+            __typename
             id
             title
             description
@@ -87,7 +90,8 @@ query {
               }
             }
           }
-          ...on ComponentSectionsTopFeature{
+          ... on ComponentSectionsTopFeature{
+            __typename
             id
             title
             description
@@ -111,7 +115,8 @@ query {
               }
             }
           }
-          ...on ComponentSectionsWhyUs {
+          ... on ComponentSectionsWhyUs {
+            __typename
             id
             title
             description
@@ -141,9 +146,6 @@ query {
             }
           }
         }
-        createdAt
-        updatedAt
-        publishedAt 
       }
     }
   }
