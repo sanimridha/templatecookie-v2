@@ -42,19 +42,19 @@
       </p>
       <!-- actions content  -->
       <div
-        class="flex flex-col sm:flex-row items-end sm:items-center sm:justify-between product-card__actions"
+        class="flex justify-between items-center sm:mt-0 mt-6  product-card__actions"
       >
         <!-- Purchase  -->
         <div
-          class="flex items-center justify-center w-full sm:w-auto space-x-3 order-2 sm:order-1"
+          class="flex items-center  space-x-3 order-2 sm:order-1"
         >
           <div>
             <nuxt-link
               to="#"
-              class="flex items-center overflow-hidden border border-blue-0b text-blue-0b rounded-lg group whitespace-nowrap product-card__button"
+              class="flex items-center overflow-hidden border border-blue-0b text-blue-0b rounded-lg group py-3.5 px-9 whitespace-nowrap product-card__button"
             >
               Learn More
-              <span class="inline-block">
+              <span class="inline-block ml-2">
                 <svg
                   width="24"
                   height="24"
@@ -89,7 +89,7 @@
           </div>
         </div>
         <!-- Price  -->
-        <div class="mb-4 sm:mb-0 order-1 sm:order-2">
+        <div class=" order-2">
           <h5
             :class="`${
               className === 'product-card--lg' ? 'text-body-24' : 'text-body-20'
@@ -112,7 +112,7 @@ export default {
     },
     buttonClass: {
       type: String,
-      required: true,
+      required: false,
     },
     tag: {
       type: String,
@@ -146,6 +146,10 @@ export default {
     .product-card {
       &__img {
         height: 296px;
+         @media (max-width: 640px) {
+          height: 200px;
+        }
+        
       }
 
       &__button {
@@ -156,6 +160,10 @@ export default {
         overflow: hidden;
         text-overflow: ellipsis;
         justify-content: center;
+        @media (max-width: 640px) {
+          height: 45px;
+          width: 150px;
+        }
         span {
           margin-left: 12px;
         }
@@ -165,6 +173,10 @@ export default {
           display: flex;
           align-items: center;
           justify-content: center;
+          @media (max-width: 640px) {
+            height: 45px;
+            width: 45px;
+          }
         }
       }
     }
@@ -198,18 +210,12 @@ export default {
     }
   }
 
-  &:hover {
-    .product-card__img-wrapper {
-      img {
-        transform: scale(1.1);
-      }
-    }
-  }
+
 
   &__img {
-    @media (max-width: 767px) {
-      height: 160px !important;
-    }
+    // @media (max-width: 767px) {
+    //   height: 160px !important;
+    // }
     img {
       transform: scale(1);
       transition: all 0.4s linear;
